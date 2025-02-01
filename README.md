@@ -2,6 +2,11 @@
 Conceitos e práticas no uso do git.\
 Repositórios existem locais e remotos.
 
+## Fluxo de trabalho
+1. git status
+1. git add / commit / push
+1. git pull
+
 ## Identidade
 ssh melhor que https
 
@@ -32,3 +37,8 @@ Envia as mudanças para o repositório\
 Faz o upload dos arquivos.\
 origin é o apelido do repositório localmente (`git remote`)
 
+### Pull
+Baixar os commits do repositório remoto para o repositório local.\
+`git pull origin main`\
+origin - qual é o repositório remoto que vou baixar (origin é o apelido)\
+main - branch main para onde vai trazer os commits
