@@ -18,3 +18,10 @@ Conectar código local a um diretório remoto\
 `git remote add origin git@......`\
 Último parâmetro informado no repositório mesmo.
 
+### Commit
+`git commit -a -m "mensagem"`\
+Adiciona tudo e faz commit.
+
+### Push
+`git push origin main`\
+Faz o upload dos arquivos.
