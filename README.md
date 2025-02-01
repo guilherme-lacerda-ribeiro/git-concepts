@@ -1,5 +1,6 @@
 # git-concepts
-Concepts and practices about git.
+Conceitos e práticas no uso do git.\
+Repositórios existem locais e remotos.
 
 ## Identidade
 ssh melhor que https
@@ -18,10 +19,9 @@ Conectar código local a um diretório remoto\
 `git remote add origin git@......`\
 Último parâmetro informado no repositório mesmo.
 
-### Commit
-`git commit -a -m "mensagem"`\
-Adiciona tudo e faz commit.
+[Commit](commit/README.md)
 
 ### Push
+Envia as mudanças para o repositório\
 `git push origin main`\
 Faz o upload dos arquivos.
