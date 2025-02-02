@@ -1,6 +1,7 @@
 # git-concepts
 Conceitos e práticas no uso do git.\
-Repositórios existem locais e remotos.
+Repositórios existem locais e remotos.\
+HEAD - Branch atual `cat .git/HEAD`
 
 ## Fluxo de trabalho
 1. git status
@@ -57,3 +58,11 @@ Faço o `git log` para obter o ID do commit.\
 Reverto usando `git revert <ID>`.\
 Verifico o arquivo gerado que será o novo commit relacionado a este revert e em seguida fecho ele.\
 `git add / push`.
+
+### Reset
+Apaga um commit.\
+`git reset --hard <ID>`\
+O ID é do commit que estará vigente no código atual, então desfaz tudo até o commit informado. Não informo o commit para apagar, mas informo o commit que quero que seja o estado do código atual (HEAD).\
+**NÃO apagar** se já tiver feito o push para evitar confusão no histórico.
+[Documentação](https://git-scm.com/docs/git-reset/pt_BR).
+
