@@ -29,7 +29,7 @@ Conectar código local a um diretório remoto\
 `git remote add origin git@......`\
 Último parâmetro informado no repositório mesmo.
 
-[Commit](commit/README.md)
+[Commit](commit)
 
 ### Push
 Envia as mudanças para o repositório\
