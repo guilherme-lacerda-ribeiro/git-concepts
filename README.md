@@ -43,6 +43,7 @@ Sugestão de ferramental para auxílio na criação de gitignore:
 - [Branch](branch)
 - [Stash](stash)
 - [Restore](restore)
+- [Tag](tag)
 
 ### Show
 `git show <id_do_commit>`
@@ -89,3 +90,16 @@ Traz as alterações realizadas no branch funcionalidade para o main.
 1. _Fast-forward_: o merge é feito sem um commit, não houve alterações no main entre a criação do branch funcionalidade e seu merge com o main.\
 Se quiser forçar o commit use `git merge --no-ff {nome_da_branch}`
 2. _Merge commit_: o merge é feito e já abre o editor com uma mensagem de commit sugerida, porque neste caso houveram alterações tanto no branch funcionalidade quanto no main, logo, elas precisaram se mesclar.
+
+## Releases
+Quero disponibilizar o release do projeto mas, além do projeto em si, vai ter por exemplo um CHANGELOG, etc.
+
+Pode ser feita pelo Github Actions automatizando (por exemplo).
+
+A release será criada a partir da tag.
+
+Insere as release notes (changelog, diff, etc).
+
+Se tivesse um projeto compilado poderia ser incluído para download.
+
+Já é disponibilizado no Github Releases os arquivos .zip e .targz. Esses arquivos são o projeto em si, comprimidos em dois formatos diferentes (Zip e GZip). Dessa forma, pessoas que não utilizem git também podem ter acesso ao código fonte dessa release.
