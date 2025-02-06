@@ -2,8 +2,10 @@
 Conceitos e práticas no uso do git.\
 Repositórios existem locais e remotos.\
 HEAD - branch atual `cat .git/HEAD`\
-HEAD - apelido/ponteiro para o último commit
-stage - local onde os commits são feitos (palco, pronto pra entrar)
+HEAD - apelido/ponteiro para o último commit\
+stage - local onde os commits são feitos (palco, pronto pra entrar)\
+[visualizing-git](https://git-school.github.io/visualizing-git/)
+
 
 ## Fluxo de trabalho
 1. git status
@@ -49,6 +51,9 @@ Envia as mudanças para o repositório\
 Faz o upload dos arquivos.\
 origin é o apelido do repositório remoto (`git remote`)
 
+`git push origin funcionalidade`
+Upload das alterações para o branch remoto _funcionalidade_
+
 ### Pull
 Baixar os commits do repositório remoto para o repositório local.\
 `git pull origin main`\
@@ -74,3 +79,8 @@ O ID é do commit que estará vigente no código atual, então desfaz tudo até 
 **NÃO apagar** se já tiver feito o push para evitar confusão no histórico.
 [Documentação](https://git-scm.com/docs/git-reset/pt_BR).
 
+### Merge
+`git switch main` seguido de `git merge funcionalidade`
+Traz as alterações realizadas no branch funcionalidade para o main.
+1. _Fast-forward_: o merge é feito sem um commit, não houve alterações no main entre a criação do branch funcionalidade e seu merge com o main.
+2. _Merge commit_: o merge é feito e já abre o editor com uma mensagem de commit sugerida, porque neste caso houveram alterações tanto no branch funcionalidade quanto no main, logo, elas precisaram se mesclar.
