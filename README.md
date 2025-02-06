@@ -1,10 +1,12 @@
 # git-concepts
+[Visualizing-git](https://git-school.github.io/visualizing-git/)
+
 Conceitos e práticas no uso do git.\
 Repositórios existem locais e remotos.\
-HEAD - branch atual `cat .git/HEAD`\
-HEAD - apelido/ponteiro para o último commit\
-stage - local onde os commits são feitos (palco, pronto pra entrar)\
-[visualizing-git](https://git-school.github.io/visualizing-git/)
+- HEAD - branch atual `cat .git/HEAD`\
+- HEAD - apelido/ponteiro para o último commit\
+- staging area (stage) - local onde os commits são feitos (palco, pronto pra entrar), após o git add.\
+- Working Tree - tudo que modifiquei e não está no stage.
 
 
 ## Fluxo de trabalho
@@ -39,6 +41,8 @@ Sugestão de ferramental para auxílio na criação de gitignore:
 - [Log](log)
 - [Diff](diff)
 - [Branch](branch)
+- [Stash](stash)
+- [Restore](restore)
 
 ### Show
 `git show <id_do_commit>`
