@@ -1,7 +1,9 @@
 # git-concepts
 Conceitos e práticas no uso do git.\
 Repositórios existem locais e remotos.\
-HEAD - Branch atual `cat .git/HEAD`
+HEAD - branch atual `cat .git/HEAD`\
+HEAD - apelido/ponteiro para o último commit
+stage - local onde os commits são feitos (palco, pronto pra entrar)
 
 ## Fluxo de trabalho
 1. git status
@@ -18,7 +20,7 @@ git config --global user.name "nome completo"
 
 ## Colaborar
 1.  **Issues**: novos recursos ou correções.
-1. **Fork** do projeto para minha máquina.
+1. **Fork** cópia do repositório para a minha conta.
 1. **Pull Request** para integrar ao repositório.
 1. **Github Gist** para compartilhar trechos de códigos e não o código inteiro com novos repositórios.
 
@@ -27,22 +29,19 @@ git config --global user.name "nome completo"
 Padrão de nomes para ignorar.
 
 Sugestão de ferramental para auxílio na criação de gitignore:
-
 - [gitignore.io](https://gitignore.io/)
 
 ## Comandos
-### Remote
-Origin é o nome do repositório remoto, na verdade o apelido.
+- [Remote](remote)
+- [Commit](commit)
+- [Log](log)
+- [Diff](diff)
+- [Branch](branch)
 
-`git remote -v`\
-(push) - envio de commits\
-(fetch) - baixar commits
+### Show
+`git show <id_do_commit>`
+Mostra o que foi alterado em um commit.
 
-Conectar código local a um diretório remoto\
-`git init && git remote add origin git@......`\
-Último parâmetro informado no repositório mesmo.
-
-[Commit](commit)
 
 ### Push
 Envia as mudanças para o repositório\
