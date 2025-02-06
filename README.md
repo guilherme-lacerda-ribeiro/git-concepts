@@ -82,5 +82,6 @@ O ID é do commit que estará vigente no código atual, então desfaz tudo até 
 ### Merge
 `git switch main` seguido de `git merge funcionalidade`
 Traz as alterações realizadas no branch funcionalidade para o main.
-1. _Fast-forward_: o merge é feito sem um commit, não houve alterações no main entre a criação do branch funcionalidade e seu merge com o main.
+1. _Fast-forward_: o merge é feito sem um commit, não houve alterações no main entre a criação do branch funcionalidade e seu merge com o main.\
+Se quiser forçar o commit use `git merge --no-ff {nome_da_branch}`
 2. _Merge commit_: o merge é feito e já abre o editor com uma mensagem de commit sugerida, porque neste caso houveram alterações tanto no branch funcionalidade quanto no main, logo, elas precisaram se mesclar.
