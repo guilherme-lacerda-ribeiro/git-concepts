@@ -61,7 +61,7 @@ Verifico o arquivo gerado que será o novo commit relacionado a este revert e em
 
 ### Reset
 Apaga um commit.\
-`git reset --hard <ID>`\
+`git reset --hard <ID_commit_anterior>`\
 O ID é do commit que estará vigente no código atual, então desfaz tudo até o commit informado. Não informo o commit para apagar, mas informo o commit que quero que seja o estado do código atual (HEAD).\
 **NÃO apagar** se já tiver feito o push para evitar confusão no histórico.
 [Documentação](https://git-scm.com/docs/git-reset/pt_BR).

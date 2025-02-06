@@ -15,12 +15,17 @@ Use mensagens simples mas objetivas.
 
 Verbo + ação: Adicionar... Corrigir... Atualizar...
 
+Referência [melhores práticas](https://www.conventionalcommits.org/pt-br/v1.0.0-beta.4/).
+
 ## Comandos
 `git commit -a -m "mensagem"`\
 Adiciona tudo e faz commit.
 
 `git log`\
 Histórico dos commits.
+
+`git commit --amend -m "Nova mensagem"`\
+Alterar o commit realizado
 
 ## Coautoria
 [Documentação](https://docs.github.com/pt/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors).
