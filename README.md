@@ -20,6 +20,15 @@ git config --global user.name "nome completo"
 1.  **Issues**: novos recursos ou correções.
 1. **Fork** do projeto para minha máquina.
 1. **Pull Request** para integrar ao repositório.
+1. **Github Gist** para compartilhar trechos de códigos e não o código inteiro com novos repositórios.
+
+## Ignorar
+`.gitignore`\
+Padrão de nomes para ignorar.
+
+Sugestão de ferramental para auxílio na criação de gitignore:
+
+- [gitignore.io](https://gitignore.io/)
 
 ## Comandos
 ### Remote
