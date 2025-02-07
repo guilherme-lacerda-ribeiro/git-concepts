@@ -4,7 +4,7 @@ Restaura para o HEAD.
 `git restore .`
 Restaura tudo, desfazendo as alterações implementadas até o momento do HEAD.
 
-`git checkout -- .`
+`git checkout -- .` ou `git checkout .`
 Antigo, mesmo efeito do `git restore .`
 
 `git restore --staged <arquivo>`

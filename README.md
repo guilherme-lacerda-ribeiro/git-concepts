@@ -103,3 +103,14 @@ Insere as release notes (changelog, diff, etc).
 Se tivesse um projeto compilado poderia ser incluído para download.
 
 Já é disponibilizado no Github Releases os arquivos .zip e .targz. Esses arquivos são o projeto em si, comprimidos em dois formatos diferentes (Zip e GZip). Dessa forma, pessoas que não utilizem git também podem ter acesso ao código fonte dessa release.
+
+## Patches
+Quando quero um backup por exemplo ou disponibilizar o que eu tenho para outra pessoa, mas sem ter que fazer um commit ou gerar um branch, por qualquer motivo, gero um patch.
+
+`git add .`
+
+`git diff --staged > wip.patch`
+Gera o diff em um arquivo.
+
+`git apply wip.patch`
+Aplica o patch localmente.
