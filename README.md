@@ -1,4 +1,6 @@
 # git-concepts
+[EXCELENTE guia para o git](https://www.alura.com.br/artigos/o-que-e-git-github), completo e detalhado, cheio de exemplos e links de referência, pode ser usado como um material de pesquisa "antes da internet".
+
 [Visualizing-git](https://git-school.github.io/visualizing-git/)
 
 Conceitos e práticas no uso do git.\
