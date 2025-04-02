@@ -17,7 +17,7 @@ Exibe todas as tags.
 `git push origin {nome}`
 Envia a tag _{nome}_ para o repositório remoto.
 
-`git push origin --tags`
+`git push origin --tags` ou por exemplo `git push origin v1.4`
 Envia todas as tags.
 
 `git tag -d {nome}`
