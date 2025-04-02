@@ -94,6 +94,8 @@ Se quiser forçar o commit use `git merge --no-ff {nome_da_branch}`
 2. _Merge commit_: o merge é feito e já abre o editor com uma mensagem de commit sugerida, porque neste caso houveram alterações tanto no branch funcionalidade quanto no main, logo, elas precisaram se mesclar.
 
 ## Releases
+Uma release (em português: lançamento) refere-se a uma versão específica e identificável de um software que é disponibilizada para os usuários finais.
+
 Quero disponibilizar o release do projeto mas, além do projeto em si, vai ter por exemplo um CHANGELOG, etc.
 
 Pode ser feita pelo Github Actions automatizando (por exemplo).
@@ -116,3 +118,44 @@ Gera o diff em um arquivo.
 
 `git apply wip.patch`
 Aplica o patch localmente.
+
+## Git Flow x Trunk Based
+
+### Git Flow
+Um modelo estruturado com ramos bem definidos: master, develop, feature, release, hotfix.
+![gitflow picture](src/img/gitflow.png)
+
+Prós:
+- Ótimo para equipes grandes.
+- Facilita controle de versões e preparação de releases.
+- Isola bem diferentes tipos de trabalho.
+
+Ideal para:
+- Projetos com versões bem definidas (ex: softwares on-premise).
+- Equipes com estrutura formal e processo de release.
+
+### Trunk Based Development (TBD)
+Todo o time trabalha diretamente (ou quase diretamente) na branch principal (geralmente main ou trunk).
+**CI/CD é essencial**.
+
+Prós:
+- Entregas contínuas e rápidas.
+- Integração frequente evita conflitos grandes.
+- Simplifica automação.
+
+Contras:
+- Exige alta disciplina e testes automatizados.
+- Pode ser difícil gerenciar para equipes inexperientes.
+- Sem feature flags, pode vazar código incompleto.
+
+Ideal para:
+- Startups, times ágeis, DevOps, CI/CD.
+- Equipes experientes em testes e integração contínua.
+
+### Git Básico / GitHub Flow
+Modelo simples baseado em uma branch principal (main) e branches de feature.
+
+Fluxo típico:
+1. Cria-se uma branch por feature ou bugfix.
+1. Pull request para main com revisão.
+1. Merge e deploy.
